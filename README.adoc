@@ -4,7 +4,7 @@
 
 * link:playbooks/Installation[OSE 3 Production-Ready Installation and Configuration]
 * link:playbooks/AppDev[OSE 3 Application Development]
-* DevOps (Continuous Delivery) with Containers
+* link:playbooks/ContinuousDelivery[DevOps (Continuous Delivery) with Containers]
 * DevOps (Continuous Delivery) with Traditional Application Platforms
 * OSE 3 RHCI Integration
 
