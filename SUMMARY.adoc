@@ -1,0 +1,5 @@
+= Summary
+
+. link:playbooks/Installation/README.adoc[Installation SmartStart Playbook]
+.. link:playbooks/Installation/installation.adoc[Initial Installation]
+.. link:playbooks/Installation/disconnected_environments.adoc[Disconnected Environments]
