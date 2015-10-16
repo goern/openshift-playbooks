@@ -21,7 +21,7 @@ Otherwise you can use you own in the steps that follow.
 ----
 
 
-==Using a private repository
+== Using a private repository
 
 When using a Private Repo the Deploy Key needs to be available for the build process 
 so it can execute a Git Clone command against the repo.
