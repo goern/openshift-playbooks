@@ -36,3 +36,9 @@ The playbooks are intended to be working documents. We are constantly updating t
 
 * link:development_guide.adoc[Playbook Development Guide]
 * link:style_guide.adoc[Style Guide for Playbooks]
+
+== License
+
+This work is licensed under a link:http://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike 4.0 International License].
+
+image::https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License, link="http://creativecommons.org/licenses/by-sa/4.0/"]
