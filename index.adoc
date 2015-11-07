@@ -1,0 +1,50 @@
+---
+---
+= Red Hat Consulting DevOps and OpenShift Playbooks
+
+Red Hat Consulting DevOps and OpenShift Playbooks are guides for implementing DevOps technical practices and container automation approaches using Red Hat commercial open source products, including OpenShift Enterprise 3. They are intended to reflect real-world experience delivering solutions through these processes and technologies.
+
+== Playbook Directory
+
+Current in-development playbooks include the following:
+////
+* Continuous Integration
+* Continuous Delivery with Traditional Platforms
+////
+* link:playbooks/continuous_delivery[Container-Driven Continuous Delivery]
+* link:playbooks/installation[OpenShift Enterprise 3 SmartStart (Production-Ready Installation and Configuration)]
+* link:playbooks/app_dev[OpenShift Enterprise 3 Application Development]
+* link:playbooks/operationalizing[Operationalizing OpenShift Enterprise 3]
+* link:playbooks/troubleshooting[Troubleshooting]
+////
+* Container Migration Factory
+////
+
+== Contributors
+
+Playbooks are maintained by Red Hat Consulting to assist in  services delivery, but we've opened these guides to the wider community in the spirit of sharing.
+
+== This is Not Official Product Documentation
+
+The playbooks are intended to supplement, not replace, official product documentation like link:https://docs.openshift.com/[Red Hat OpenShift Documentation].
+
+== A Work in Progress
+
+The playbooks are intended to be working documents. We are constantly updating these documents to reflect lessons learned in field implementation of these technologies. You'll find placeholders for incomplete sections and requests for feedback and future contribution.
+
+== How to Contribute
+
+*We welcome contributions from the community.* If you find errors or have a different approach or opinion about how to best solve a problem discussed here, please open an issue and/or submit a pull request. To help you understand how to contribute, please take a look at the following resources:
+
+* link:development_guide{outfilesuffix}[Playbook Development Guide]
+////
+Once we have asciidoctor 1.5.3, we can change to this format
+* <</development_guide.adoc#,Playbook Development Guide>>
+////
+* link:style_guide{outfilesuffix}[Style Guide for Playbooks]
+
+== License
+
+This work is licensed under a link:http://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike 4.0 International License].
+
+image::https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License, link="http://creativecommons.org/licenses/by-sa/4.0/"]

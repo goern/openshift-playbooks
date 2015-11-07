@@ -1,0 +1,25 @@
+{% assign url_parts = page.url | split:'/' %}
+{% capture last_word %} {{ url_parts | last | replace:' ','' }} {% endcapture %}
+{% assign previous="" %}
+<ul class="title-area breadcrumb">
+{% if url_parts.size <= 2 %}
+ <li class="name"><h1><a href="/">{{ page.title }}</a></h1></li>
+{% else %}
+ <li class="name"><h1><a href="/">Home</a></h1></li>
+ <li class="name"><h1> &#187; </h1></l1>
+
+  {% for part in url_parts %}
+    {% capture new_part %}{{ part | replace:' ','' }}{% endcapture %}
+    {% if new_part == '/' or new_part == '' or new_part == null %}
+      {% continue %}
+    {% endif %}
+    {% capture previous %}{{ previous }}/{{ new_part }}{% endcapture %}
+    {% if last_word contains new_part %}
+      <li class="name"><h1><a href="{{previous}}">{{page.title}}</a></h1></li>
+    {% else %}
+      <li class="name"><h1><a href="{{previous}}">{{new_part}}</a></h1></li>
+      <li class="name"><h1> &#187; </h1></l1>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+</ul>
