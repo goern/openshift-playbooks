@@ -1,4 +1,5 @@
-
+---
+---
 = External Load Balancer Integrations with OpenShift Enterprise 3
 Eric Sauer <esauer@redhat.com>, obedin@redhat.com
 v1.0, 2015-10-30
@@ -51,7 +52,7 @@ LB algorithm (sticky, round robin, etc.)
 OpenShift Router Responsible for
 Example (with Diagram)
 
-TODO: Insert Image
+image::openshift_hybrid_load_balancing.png[Simple Integration]
 
 === Full Integration (Integrating F5 as the OpenShift Router)
 
@@ -67,8 +68,13 @@ Requirements for a Full Integration include:
 ** Create VirtualHosts
 ** Delete VirtualHosts
 ** Add and Configure Certificates
+* One or more link:https://docs.openshift.com/enterprise/3.0/admin_guide/routing_from_edge_lb.html#establishing-a-tunnel-using-a-ramp-node[OpenShift Ramp Nodes] by which access to the internal SDN is provided to the BIG-IP
 
 In this way, the OpenShift router pods work as configuration agents for the F5, and rather than actually handling incomming web traffic, just watch the OpenShift API for new routes to be created, and passes that configuration information up to the F5 via the API to configure routes and handle traffic at the Load Balancer level.
+
+Through the use of tunnels provided by Ramp Nodes, the F5 BIG-IP is given direct access to OpenShift pods, removing the need for an intermediate network hop through a proxy server.
+
+image::openshift_full_f5_load_balancing.png[Simple Integration]
 
 For more information on configuration, view the routing section of the official OpenShift Enterprise docs:
 https://docs.openshift.com/enterprise/3.0/install_config/install/deploy_router.html#deploying-the-f5-router
