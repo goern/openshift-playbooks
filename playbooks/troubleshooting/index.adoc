@@ -2,5 +2,5 @@
 ---
 = OSE 3 TroubleShooting
 
-* link:STI-JWS{outfilesuffix}[STI JWS]
-* link:Known-Bugs{outfilesuffix}[Known Bugs]
+* link:sti_jws{outfilesuffix}[Java Source-to-Image Troubleshooting Tips]
+* link:known_bugs{outfilesuffix}[Known Bugs]

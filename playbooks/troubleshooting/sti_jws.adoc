@@ -1,12 +1,16 @@
+---
+---
+= Troubleshooting Java Apps
+
 == Creating a JWS App secret - Prerequisite
 
 In order to get a JWS app to build properly a JWS App Secret needs to exist.
-If there isn’t a JWS certificate needed to build the app outside of STI then a substitute can be used. 
+If there isn’t a JWS certificate needed to build the app outside of STI then a substitute can be used.
 Otherwise you can use you own in the steps that follow.
 
 * Get a copy of the JWS App Secret .json file from the JBoss Openshift Git repo:
   https://github.com/jboss-openshift/application-templates/blob/master/secrets/jws-app-secret.json
-* Save the file locally on the OSE Master node. 
+* Save the file locally on the OSE Master node.
   If you have a JWS App Certificate and Key you can replace the “server.crt” and “server.key” lines.
 * Execute the following command:
 
@@ -23,7 +27,7 @@ Otherwise you can use you own in the steps that follow.
 
 == Using a private repository
 
-When using a Private Repo the Deploy Key needs to be available for the build process 
+When using a Private Repo the Deploy Key needs to be available for the build process
 so it can execute a Git Clone command against the repo.
 
 * If a key has not been created for the Master Node run the following command:
@@ -45,6 +49,3 @@ ssh-keygen -t rsa
 --------
  oc secrets add serviceaccount/builder secrets/amgen-git -n <project name>
 --------
- 
- 
-
